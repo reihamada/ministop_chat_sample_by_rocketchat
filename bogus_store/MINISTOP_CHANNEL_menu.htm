@@ -12,7 +12,7 @@
 		}
 	</script>
 </head>
-<body>
+  <body>
   <!-- ヘッダ -->
 	<div id="header"><img src="MINISTOP_CHANNEL_menu_files/logoQR.png"></div>
 	<font id="errmsg" color="red">検索キーワードを入力してください<br></font>
@@ -42,5 +42,15 @@
   		<div class="cnl2"><a href="http://localhost:28081/MSC0009" class="cp_btn2">連絡表</a></div>
   		<div class="cnl2"><a href="http://localhost:28081/MSC0010" class="cp_btn2">企画書</a></div>
 	</div>
-  <iframe width='100%;' height='100%' src="http://rocketchatonpre.ddns.net/channel/general?layout=embedded" frameborder="0"></iframe>
+
+	<!-- Start of Rocket.Chat Livechat Script -->
+	<script type="text/javascript">
+	(function(w, d, s, u) {
+		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+		j.async = true; j.src = 'https://rocketchatonpre.ddns.net/livechat/rocketchat-livechat.min.js?_=201903270000';
+		h.parentNode.insertBefore(j, h);
+	})(window, document, 'script', 'https://rocketchatonpre.ddns.net/livechat');
+	</script>
+	<!-- End of Rocket.Chat Livechat Script -->
 </body></html>
