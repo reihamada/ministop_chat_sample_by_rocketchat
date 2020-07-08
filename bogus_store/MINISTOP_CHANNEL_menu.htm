@@ -54,8 +54,12 @@
 	    RocketChat(function() {
 		this.registerGuest({
 		    name: '店舗1従業員',
-		    email: 'sample@rocket.chat'
+		    email: 'sample@rocket.chat',
+		    token: 'token1',
+		    department: 'department1'
 		});
+		// this.setDepartment('department1');
+		// this.setGuestToken('token1');
 	    });
 	})(window, document, 'script', 'https://reihamada.rocket.chat/livechat');
 	</script>
