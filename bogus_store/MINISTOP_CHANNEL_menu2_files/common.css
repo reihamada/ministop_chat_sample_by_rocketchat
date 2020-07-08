@@ -1,0 +1,251 @@
+@charset "UTF-8";
+
+/*=============================================================================
+全般
+=============================================================================*/
+body {
+	width:  850px;
+	height: 630px;
+	background-color:  #FFFACD ;
+}
+
+/*=============================================================================
+ヘッダー
+=============================================================================*/
+div#header {
+	height: 58px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
+	width:  800px;
+}
+
+/*=============================================================================
+コンテンツ
+=============================================================================*/
+.newinfo {
+	width:  830px;
+	height: 300px;
+	background-color: white;
+	text-align: left;
+	border: 3px #FFA500 solid;
+	font-size: 24px;
+	margin: 0px auto;
+	overflow: scroll;
+}
+
+.searcharea {
+	margin: 10px 0px 0px 10px;
+	font-size: 18px;
+	float: left;
+	font-weight: bold;
+}
+
+.login{
+	/*IE6では中央によらないらしい*/
+	border-style: none;
+	width:  300px;
+	height: 200px;
+	margin: 0 auto;
+}
+
+
+.channels {
+	width: 850px;
+	background-color:  #FFFACD ;
+}
+
+.cnl {
+	float: left;
+	margin: 15px;
+}
+
+.cnl2 {
+	margin: 15px;
+	float: left;
+	font-size: 15px;
+}
+
+
+.cnlimgleft {
+	float: left;
+	margin: 8px;
+}
+
+.cnlimgright {
+	float: right;
+	margin: 8px;
+}
+
+.cnlstrleft {
+	float: left;
+	margin: 10px;
+	font-size: 24px;
+	background: #7f7f7f;
+	color: #ffffff;
+	margin: 10px;
+}
+
+
+image {
+	border: none;
+}
+
+/*=============================================================================
+一覧
+=============================================================================*/
+table , td, th {
+	border-collapse: collapse;
+	font-size: 24px;
+}
+
+table , th {
+	border: 1px solid #595959;
+}
+
+td, th {
+	padding: 3px;
+	height: 40px;
+}
+th {
+	background: #f0e6cc;
+}
+td {
+	border-top: 1px solid #595959;
+	border-bottom: 1px solid #595959;
+}
+
+/*=============================================================================
+一覧ストライプ
+=============================================================================*/
+
+.even {
+	background: #fbf8f0;
+}
+.odd {
+	background: #fefcf9;
+}
+
+/*=============================================================================
+一覧カラム
+=============================================================================*/
+
+.column1{
+	width: 810px;
+}
+
+.column2{
+	width: 600px;
+}
+
+.column3{
+	width: 100px;
+	text-align: center;
+}
+
+.column3new{
+	width: 100px;
+	text-align: center;
+	background: #FF99CC;
+	color: #ffffff;
+}
+
+.column4{
+	border-left: 1px solid #595959;
+	width: 140px;
+	text-align: center;
+}
+
+/*=============================================================================
+アンケート
+=============================================================================*/
+.question{
+	border-style: solid ;
+	border-width: 1px;
+	font-size: 18px;
+	width:  800px;
+	height: 180px;
+	margin: 10px;
+	overflow: scroll;
+}
+
+.join{
+	border-style: none ;
+	border-width: 1px;
+	font-size: 18px;
+	width:  175px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+.selection{
+	border-style: none ;
+	border-width: 1px;
+	font-size: 18px;
+	width:  800px;
+	height: 200px;
+	float: left;
+	margin: 10px;
+}
+
+.position{
+	border-style: none ;
+	border-width: 1px;
+	font-size: 18px;
+	width:  175px;
+	height: 200px;
+	float: right;
+	margin: 10px;
+}
+
+
+/*=============================================================================
+フッター
+=============================================================================*/
+
+.hutta {
+	width: 175px;
+	height: 200px;
+}
+
+/*=============================================================================
+ボタン
+=============================================================================*/
+
+a.cp_btn {
+	position: relative;
+	display: inline-block;
+	width: 110px;
+	padding: 6px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFF;
+	background: #023894;
+	transition: .4s;
+}
+
+a.cp_btn2 {
+	position: relative;
+	display: flex;
+	*display: block;
+	justify-content: center;
+	align-items: center;
+	width: 100px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFF;
+	background: #023894;
+	transition: .4s;
+	height: 80px;
+}
+
+a.cp_btn:hover {
+	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px
+		rgba(255, 255, 240, 0.83);
+	transition: .4s;
+}
+
+a.cp_btn2:hover {
+	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px
+		rgba(255, 255, 240, 0.83);
+	transition: .4s;
+}
