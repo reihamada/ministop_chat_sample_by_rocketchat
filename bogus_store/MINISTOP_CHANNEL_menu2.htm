@@ -52,8 +52,10 @@
 		j.async = true; j.src = 'https://reihamada.rocket.chat/livechat/rocketchat-livechat.min.js?_=201903270000';
 		h.parentNode.insertBefore(j, h);
 	    RocketChat(function() {
-		this.setGuestName('店舗2従業員');
-		this.setGuestEmail('sample@rocket.chat');
+		this.registerGuest({
+		    name: '店舗2従業員',
+		    email: 'sample@rocket.chat'
+		});
 	    });
 	})(window, document, 'script', 'https://reihamada.rocket.chat/livechat');
 	</script>
