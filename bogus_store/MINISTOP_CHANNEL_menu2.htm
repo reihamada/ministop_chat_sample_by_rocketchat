@@ -57,12 +57,14 @@
             RocketChat(function() {
                 this.registerGuest({
                     name: '店舗2従業員',
-                    email: 'reihamada+2@gmail.com'
+                    email: 'reihamada+2@gmail.com',
+		    token: 'token2',
+		    department: 'department1'
                 });
 		this.setGuestName('店舗2従業員');
 		this.setGuestEmail('reihamada+2@gmail.com');
-                // this.setDepartment('department1');
-                // this.setGuestToken('token1');
+                this.setGuestToken('token2');
+                this.setDepartment('department1');
             });
         })(window, document, 'script', 'https://rocketchatonpre.ddns.net/livechat');
         </script>
