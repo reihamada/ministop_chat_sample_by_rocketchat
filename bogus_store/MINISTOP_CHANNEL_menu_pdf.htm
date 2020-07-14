@@ -1,65 +1,113 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<meta http-equiv="Content-Style-Type" content="text/css">
-	<meta http-equiv="Pragma" content="no-cache">
-	<meta http-equiv="Cache-Control" content="no-cache">
-	<title>MINISTOP CHANNEL メニュー画面</title>
-	<link rel="stylesheet" href="MINISTOP_CHANNEL_menu_files/common.css" type="text/css">
-	<script type="text/javascript">
-		function deleteErrmsg() {
-			document.getElementById('errmsg').innerText = '';
-		}
-	</script>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Pragma" content="no-cache">
+        <meta http-equiv="Cache-Control" content="no-cache">
+        <title>MINISTOP CHANNEL アンケート画面</title>
+        <link rel="stylesheet" href="../assets/css/common.css" type="text/css">
 </head>
-  <body>
+<body>
   <!-- ヘッダ -->
-	<div id="header"><img src="MINISTOP_CHANNEL_menu_files/logoQR.png"></div>
-	<h1>店舗1のpdf画面(?)のつもり</h1>
-	<font id="errmsg" color="red">検索キーワードを入力してください<br></font>
-	<div class="searcharea">
-		<form id="search" action="MSC0007" method="post">
-			コンテンツ名検索
-			<input name="searchKeyword" size="20" maxlength="20" style="font-size: 100%;" type="text">
-			<a class="cp_btn" onclick="deleteErrmsg(); document.getElementById('search').submit(); return false;">検索</a>
-		</form>
-	</div>
-	<br>
-	<div class="newinfo">
-		<ul>
- 				<li> 09/13 <a href="http://localhost:28081/MSC0005/C00306">三顧の礼! 三顧の礼! 三顧の礼! </a> <br>
- 				</li><li> 09/11 <a href="http://localhost:28081/MSC0006/C00303">テスト配信！</a> <br>
- 				</li><li> 09/11 <a href="http://localhost:28081/MSC0006/C00301">１１３０１２１４配信！</a> <br>
-		</li></ul>
-	</div>
-	<div class="channels">
-		<div class="cnl2"><a href="http://localhost:28081/MSC0003/H00001" class="cp_btn2">スタッフ<br>育成</a></div>
-		<div class="cnl2"><a href="http://localhost:28081/MSC0003/H00002" class="cp_btn2">オペレー<br>ション</a></div>
-		<div class="cnl2"><a href="http://localhost:28081/MSC0003/H00003" class="cp_btn2">保存<br>情報</a></div>
-		<div class="cnl2"><a href="http://localhost:28081/MSC0003/H00004" class="cp_btn2">各種<br>フォーマット</a></div>
-		<div class="cnl2"><a href="http://localhost:28081/MSC0003/H00005" class="cp_btn2">地域<br>情報</a></div>
-		<div class="cnl2"><a href="http://localhost:28081/MSC0003/H00006" class="cp_btn2">電子<br>マニュアル</a></div>
-		<div class="cnl2"><a href="http://localhost:28081/MSC0008" class="cp_btn2">本部<br>メッセージ</a></div>
-  		<div class="cnl2"><a href="http://localhost:28081/MSC0009" class="cp_btn2">連絡表</a></div>
-  		<div class="cnl2"><a href="http://localhost:28081/MSC0010" class="cp_btn2">企画書</a></div>
-	</div>
+        <div id="header"><img src="../assets/img/logo.png"></div>
+<!-- アンケート名称 / TOP -->
+ <div class="channels">
+                <div class="cnlstrleft">アンケートサンプル(店舗1)</div>
+                <div class="cnlimgright"><a href="../MSC0002" class="cp_btn">TOP</a></div>
+ </div>
+        <!-- アンケート 回答期間内 -->
+        
+        
+        <form action=../MSC0006/C00667 method="post">
+        <div class="newinfo_ans">
+                <div class="question">
+                        <p>
+                                
+                                <pre>本文アンケート</pre>
+                                
+                        </p>
+                </div>
+                <!-- 選択一覧 -->
+                <div class="selection">
+                        
+                        <input type="checkbox" id="choice01_answer" name="choice01_answer" value="1"  >第1:選択肢1テスト<br>
+                        <input type="checkbox" id="choice02_answer" name="choice02_answer" value="1"  >第2:選択肢2テスト<br>
+                        <input type="checkbox" id="choice03_answer" name="choice03_answer" value="1"  >第3:<br>
+                        <input type="checkbox" id="choice04_answer" name="choice04_answer" value="1"  >第4:<br>
+                        <input type="checkbox" id="choice05_answer" name="choice05_answer" value="1"  >第5:<br>
+                        <input type="checkbox" id="choice06_answer" name="choice06_answer" value="1"  >第6:<br>
+                        <input type="hidden" id="choice01_answer" name="choice01_answer" value="0"/>
+                        <input type="hidden" id="choice02_answer" name="choice02_answer" value="0"/>
+                        <input type="hidden" id="choice03_answer" name="choice03_answer" value="0"/>
+                        <input type="hidden" id="choice04_answer" name="choice04_answer" value="0"/>
+                        <input type="hidden" id="choice05_answer" name="choice05_answer" value="0"/>
+                        <input type="hidden" id="choice06_answer" name="choice06_answer" value="0"/>
+                        
+                </div>
+        </div>
 
-	<!-- Start of Rocket.Chat Livechat Script -->
-	<script type="text/javascript">
-	(function(w, d, s, u) {
-		w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-		var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-		j.async = true; j.src = 'https://rocketchatonpre.ddns.net/livechat/rocketchat-livechat.min.js?_=201903270000';
-		h.parentNode.insertBefore(j, h);
-	    RocketChat(function() {
-		this.registerGuest({
-		    name: '店舗1従業員(pdf画面から)',
-		    email: 'sample@rocket.chat',
-		    token: 'token3',
-		    department: 'department1'
-		});
-	    });
-	})(window, document, 'script', 'https://rocketchatonpre.ddns.net/livechat');
-	</script>
-	<!-- End of Rocket.Chat Livechat Script -->
+        <div class="cnlmove" style="visibility:hidden;">
+                <button id="prevbtn" class="dsp_btn" type="button" onclick="goNextPage(this,'/MSC0006/C00667')" >
+                        前へ
+                </button>
+        </div>
+        <div class="cnlmove" style="visibility:visible;">
+                <button id="nextbtn" class="dsp_btn" type="button" onclick="goNextPage(this,'/MSC0005/C00663')" >
+                        次へ
+                </button>
+        </div>
+        <!-- 戻る -->
+        <div class="cnlimgright">
+                <a href="/MSC0004/P00001" class="cp_btn">一覧表表示</a>
+        </div>
+        <div class="cnlimgright">
+                <button class="cp_btn" type="submit">回答</button>
+        </div>
+<!--    <br> -->
+        </form>
+        
+
+
+        <!-- アンケート 回答期間外 -->
+        
+        <script>
+                window.onload = function(){
+                        goNextPage(document.getElementById('prevbtn'));
+                        goNextPage(document.getElementById('nextbtn'));
+                };
+                function goNextPage(btn,uri) {
+                        btn.disabled=true;
+                        if(uri != null){
+                                setTimeout(function(){doEnabled(btn)},3000)
+                                location.href = uri;
+                        }else{
+                                setTimeout(function(){doEnabled(btn)},1000)
+                        }
+                }
+                function doEnabled(btn) {
+                        btn.disabled=false;
+                }
+
+        </script>
+
+        <!-- Start of Rocket.Chat Livechat Script -->
+        <script type="text/javascript">
+        (function(w, d, s, u) {
+                w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
+                var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
+                j.async = true; j.src = 'https://rocketchatonpre.ddns.net/livechat/rocketchat-livechat.min.js?_=201903270000';
+                h.parentNode.insertBefore(j, h);
+            RocketChat(function() {
+                this.registerGuest({
+                    name: '店舗1従業員(pdf画面から)',
+                    email: 'sample@rocket.chat',
+                    token: 'token3',
+                    department: 'department1'
+                });
+            });
+        })(window, document, 'script', 'https://rocketchatonpre.ddns.net/livechat');
+        </script>
+        <!-- End of Rocket.Chat Livechat Script -->
 </body></html>
