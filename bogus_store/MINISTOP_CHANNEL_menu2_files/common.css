@@ -3,9 +3,11 @@
 /*=============================================================================
 全般
 =============================================================================*/
+* {
+}
 body {
 	width:  850px;
-	height: 630px;
+	height: 580px;
 	background-color:  #FFFACD ;
 }
 
@@ -13,8 +15,9 @@ body {
 ヘッダー
 =============================================================================*/
 div#header {
-	height: 58px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
-	width:  800px;
+	height: 80px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
+	width:  850px;
+	position : relative;
 }
 
 /*=============================================================================
@@ -30,9 +33,29 @@ div#header {
 	margin: 0px auto;
 	overflow: scroll;
 }
-
+.newinfo_ch {
+	width:  530px;
+	height: 390px;
+	background-color: white;
+	text-align: left;
+	border: 3px #FFA500 solid;
+	font-size: 20px;
+	margin: 0px auto;
+	overflow: scroll;
+}
+.newinfo_ans {
+	width:  830px;
+	height: 475px;
+	background-color: white;
+	text-align: left;
+	border: 3px #FFA500 solid;
+	font-size: 24px;
+	margin: 0px auto;
+	overflow: scroll;
+}
 .searcharea {
-	margin: 10px 0px 0px 10px;
+	width:  550px;
+	height: 51px;
 	font-size: 18px;
 	float: left;
 	font-weight: bold;
@@ -50,8 +73,15 @@ div#header {
 .channels {
 	width: 850px;
 	background-color:  #FFFACD ;
+        display: table;
+        table-layout:fixed;
 }
-
+.channels_ch {
+	width: 540px;
+	background-color:  #FFFACD ;
+        display: table;
+        table-layout:fixed;
+}
 .cnl {
 	float: left;
 	margin: 15px;
@@ -62,7 +92,6 @@ div#header {
 	float: left;
 	font-size: 15px;
 }
-
 
 .cnlimgleft {
 	float: left;
@@ -83,6 +112,21 @@ div#header {
 	margin: 10px;
 }
 
+.cnlstrleft_ch {
+	float: left;
+	margin: 8px 5px 8px 5px;
+	font-size: 20px;
+	background: #7f7f7f;
+	color: #ffffff;
+}
+
+.cnlmove {
+	margin: 8px 15px;
+	float: left;
+	display: table;
+	vertical-align: middle;
+	table-layout:fixed;
+}
 
 image {
 	border: none;
@@ -93,7 +137,7 @@ image {
 =============================================================================*/
 table , td, th {
 	border-collapse: collapse;
-	font-size: 24px;
+	font-size: 18px;
 }
 
 table , th {
@@ -103,6 +147,7 @@ table , th {
 td, th {
 	padding: 3px;
 	height: 40px;
+/* 	white-space : nowrap; */
 }
 th {
 	background: #f0e6cc;
@@ -126,9 +171,12 @@ td {
 /*=============================================================================
 一覧カラム
 =============================================================================*/
+.columnd{
+	width: 30px;
+}
 
 .column1{
-	width: 810px;
+	width: 600px;
 }
 
 .column2{
@@ -147,9 +195,26 @@ td {
 	color: #ffffff;
 }
 
+.column3red{
+	width: 100px;
+	text-align: center;
+	background: #ff0000;
+	color: #ffffff;
+}
+
+.column4new{
+	border-left: 1px solid #595959;
+	width: 280px;
+	text-align: center;
+}
+
 .column4{
 	border-left: 1px solid #595959;
 	width: 140px;
+	text-align: center;
+}
+.column5{
+ 	width: 110px;
 	text-align: center;
 }
 
@@ -195,6 +260,48 @@ td {
 	margin: 10px;
 }
 
+/*=============================================================================
+ 店舗ステータス参照画面
+=============================================================================*/
+/* 参照画面へのリンク */
+.gift-status-link {
+	position: absolute;
+	top : 8px;
+	left : 320px;
+	padding : 4px 12px;
+	background : #Fcc;
+	color : #F00;
+	border : 1px solid #F00;
+	text-decoration : none;
+}
+/* 検索条件 */
+.gift-search-condition {
+	margin : 10px;
+	clear: both;
+	width : 850px;
+	position : relative;
+}
+/* 検索結果数 */
+.gift-search-count {
+    height: 20px;
+    position : absolute;
+    right : 20px;
+    top : 0;
+}
+.gift-search-count P {
+    margin-left: 10px;
+    float: left;
+}
+/* 検索結果 */
+.gift-search-result th, .gift-search-result td {
+	border-left : 1px solid #000;
+	font-size : 0.85em;
+	text-align : center;
+}
+/* 申込書画像 */
+.gift-scan-image img {
+	width : 100%;
+}
 
 /*=============================================================================
 フッター
@@ -239,13 +346,37 @@ a.cp_btn2 {
 }
 
 a.cp_btn:hover {
-	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px
-		rgba(255, 255, 240, 0.83);
-	transition: .4s;
+    color: #FF9;
+    background-color: #025894;
 }
 
 a.cp_btn2:hover {
 	text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px
 		rgba(255, 255, 240, 0.83);
 	transition: .4s;
+}
+
+button.cp_btn {
+	font-size: 100%;
+	font: inherit;
+	position: relative;
+	display: inline-block;
+	width: 120px;
+	padding: 6px;
+	text-align: center;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFF;
+	background: #023894;
+	transition: .4s;
+	border-style: none;
+}
+button.dsp_btn {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 6px 18px;
+}
+
+button.dsp_btn:hover {
+	cursor:pointer;
 }
