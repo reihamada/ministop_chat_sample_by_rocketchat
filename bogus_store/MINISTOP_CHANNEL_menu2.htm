@@ -55,10 +55,14 @@
 		j.async = true; j.src = 'https://rocketchatonpre.ddns.net/livechat/rocketchat-livechat.min.js?_=201903270000';
 		h.parentNode.insertBefore(j, h);
 	    RocketChat(function() {
-		this.initialize({
-                    name: '店舗2従業員',
-                    email: 'reihamada+2@gmail.com',
-                    department: 'department2',
+		// this.initialize({
+                //     name: '店舗2従業員',
+                //     email: 'reihamada+2@gmail.com',
+                //     department: 'department2',
+		// });
+		this.setAgent({
+		    _id: 'administrator2',
+		    username: 'username - administrator2',
 		});
 		// this.registerGuest({
                 //     name: '店舗2従業員',
