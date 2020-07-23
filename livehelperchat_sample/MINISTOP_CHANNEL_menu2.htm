@@ -47,15 +47,14 @@
                 <div class="cnl2"><a href="http://localhost:28081/MSC0010" class="cp_btn2">企画書</a></div>
         </div>
 
-<!-- Place this tag where you want the Live Helper Chatbox module to render. -->
-<div id="lhc_chatbox_embed_container" ></div>
-
-<!-- Place this tag after the Live Helper Chatbox module tag. -->
 <script type="text/javascript">
-var LHCChatboxOptionsEmbed = {hashchatbox:'empty',identifier:'default'};
+var LHCChatOptions = {};
+LHCChatOptions.opt = {widget_height:340,widget_width:300,popup_height:520,popup_width:500};
 (function() {
 var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-po.src = '//ministop.livehelperchat.com/eng/chatbox/embed/(chat_height)/220';
+var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
+var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
+po.src = '//ministop.livehelperchat.com/eng/chat/getstatus/(click)/internal/(position)/bottom_right/(ma)/br/(top)/350/(units)/pixels/(leaveamessage)/true?r='+referrer+'&l='+location;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 </script>
