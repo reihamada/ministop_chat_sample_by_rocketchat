@@ -47,18 +47,11 @@
                 <div class="cnl2"><a href="http://localhost:28081/MSC0010" class="cp_btn2">企画書</a></div>
         </div>
 
-<!-- Place this tag where you want the Live Helper Plugin to render. -->
-<div id="lhc_status_container_page" ></div>
-
-<!-- Place this tag after the Live Helper Plugin tag. -->
-<script type="text/javascript">
-var LHCChatOptionsPage = {'height':300,'mobile':false};
-LHCChatOptionsPage.opt = {};
+<script>var LHC_API = LHC_API||{};
+LHC_API.args = {mode:'widget',lhc_base_url:'//ministop.livehelperchat.com/',wheight:450,wwidth:350,pheight:520,pwidth:500,leaveamessage:true,check_messages:false,identifier:'foo2',lang:'eng/'};
 (function() {
-var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-var referrer = (document.referrer) ? encodeURIComponent(document.referrer.substr(document.referrer.indexOf('://')+1)) : '';
-var location  = (document.location) ? encodeURIComponent(window.location.href.substring(window.location.protocol.length)) : '';
-po.src = '//ministop.livehelperchat.com/eng/chat/getstatusembed?r='+referrer+'&l='+location;
+var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true;
+var date = new Date();po.src = '//ministop.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 })();
 </script>
