@@ -91,19 +91,12 @@
 
         </script>
 
-        <!-- Start of Rocket.Chat Livechat Script -->
-        <script type="text/javascript">
-        (function(w, d, s, u) {
-                w.RocketChat = function(c) { w.RocketChat._.push(c) }; w.RocketChat._ = []; w.RocketChat.url = u;
-                var h = d.getElementsByTagName(s)[0], j = d.createElement(s);
-                j.async = true; j.src = 'https://rocketchatonpre.ddns.net/livechat/rocketchat-livechat.min.js?_=201903270000';
-                h.parentNode.insertBefore(j, h);
-	    RocketChat(function() {
-		this.setName('アンケート200714-001(店舗1)');
-		this.setEmail('reihamada+pdf@gmail.com');
-		this.setDepartment('department2');
-	    });
-        })(window, document, 'script', 'https://rocketchatonpre.ddns.net/livechat');
-        </script>
-        <!-- End of Rocket.Chat Livechat Script -->
+<script>var LHC_API = LHC_API||{};
+LHC_API.args = {mode:'widget',lhc_base_url:'//ministop.livehelperchat.com/',wheight:450,wwidth:350,pheight:520,pwidth:500,leaveamessage:true,check_messages:false,identifier:'foo_pdf',lang:'eng/'};
+(function() {
+var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true;
+var date = new Date();po.src = '//ministop.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+})();
+</script>
 </body></html>
