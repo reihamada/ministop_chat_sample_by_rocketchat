@@ -97,6 +97,10 @@ LHC_API.args = {mode:'widget',lhc_base_url:'//ministop.livehelperchat.com/',whei
 var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true;
 var date = new Date();po.src = '//ministop.livehelperchat.com/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+if (typeof lhc_var === 'undefined'){  
+    window.lhc_var = {}; // Window is required to define variable in global scope 
+};  
+    lhc_var.usernamepassing = 'foo1';
 })();
 </script>
 </body></html>
