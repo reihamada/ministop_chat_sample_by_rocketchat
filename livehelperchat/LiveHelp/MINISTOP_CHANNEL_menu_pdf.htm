@@ -98,8 +98,9 @@
 	  lhc_var.usernamepassing = '中野二丁目店(アンケート200714-001)';
 	  lhc_var.area = '東京西';
 	  lhc_var.type = 'アンケート質問';
+
 	  var LHC_API = LHC_API||{};
-	  LHC_API.args = {mode:'widget',lhc_base_url:'//34.105.79.166/livechat/lhc_web/index.php/',wheight:450,wwidth:350,pheight:520,pwidth:500,fresh:true,leaveamessage:true,check_messages:false};
+	  LHC_API.args = {mode:'widget',lhc_base_url:'//34.105.79.166/livechat/lhc_web/index.php/',wheight:450,wwidth:350,pheight:520,pwidth:500,leaveamessage:true,department:[2],check_messages:false};
 	  (function() {
 	      var po = document.createElement('script'); po.type = 'text/javascript'; po.setAttribute('crossorigin','anonymous'); po.async = true;
 	      var date = new Date();po.src = '//34.105.79.166/livechat/lhc_web/design/defaulttheme/js/widgetv2/index.js?'+(""+date.getFullYear() + date.getMonth() + date.getDate());
